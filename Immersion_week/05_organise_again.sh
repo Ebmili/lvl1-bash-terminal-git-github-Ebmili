@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/bash
 
 parent_dir="./Immersion_week"
 
@@ -7,10 +7,10 @@ files=("learnings.md" "learnings.md" "learnings.md" "learnings.md" "learnings.md
 
 for subdir in "${subdirs[@]}"; do
 	    mkdir -p "$parent_dir/$subdir"
-    done
+  done
 
-    for subdir in "${subdirs[@]}"; do
-	        for file in "${files[@]}"; do
+for subdir in "${subdirs[@]}"; do
+	      for file in "${files[@]}"; do
 			        touch "$parent_dir/$subdir/$file"
-				    done
-			    done
+				done
+	done
